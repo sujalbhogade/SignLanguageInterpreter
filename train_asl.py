@@ -124,7 +124,7 @@ for epoch in range(EPOCHS):
             scaler.update()
             optimizer.zero_grad()
 
-    # 🔥 IMPORTANT: handle leftover gradients
+    #IMPORTANT: handle leftover gradients
     if (step + 1) % accumulation_steps != 0:
         scaler.step(optimizer)
         scaler.update()
@@ -140,4 +140,4 @@ torch.save({
     "classes": full_dataset.classes
 }, "asl_model.pth")
 
-print("✅ Training complete. Model saved as asl_model.pth")
+print("Training complete. Model saved as asl_model.pth")
