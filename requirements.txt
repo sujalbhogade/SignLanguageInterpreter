@@ -1,0 +1,13 @@
+tensorflow==2.14.0
+mediapipe==0.10.14
+numpy<2
+opencv-python-headless
+pyqt6
+torch==2.7.0
+torchvision==0.22.0
+mediapipe==0.10.14
+numpy==1.26.4
+opencv-python==4.11.0.86
+PyQt6==6.9.0
+pyttsx3==2.99
+Pillow==11.2.1
